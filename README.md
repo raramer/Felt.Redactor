@@ -26,9 +26,9 @@ _See example above._
 
 * IfIsRedacts : a list of rules for optional masking.
 
-** If : the name of a field you want to check.
-** Is : the expected value of field to enable masking.
-** Redact: the name of a field whose value needs to be masked.
+  * If : the name of a field you want to check.
+  * Is : the expected value of field to enable masking.
+  * Redact: the name of a field whose value needs to be masked.
 
 ```csharp
 var redactor = new JsonRedactor(new IfIsRedact 
@@ -61,10 +61,10 @@ var redactedJson = redactor.Redact(json);
 * StringComparison : how to compare values.  The default is OrdinalIgnoreCase.
 
 * ComplexTypeHandling : how to mask complex types.
-** RedactValue (default) - redacts the entire value.
-** RedactDescendants - redacts each descendant value, preserving the complex type's data structure.
+  * RedactValue (default) - redacts the entire value.
+  * RedactDescendants - redacts each descendant value, preserving the complex type's data structure.
 
 * OnErrorRedact : how to handle the response when the value does not conform to the structured text type.
-** All (default) - redacts the entire response.
-** None - the original value is returned.
+  * All (default) - redacts the entire response.
+  * None - the original value is returned.
 
