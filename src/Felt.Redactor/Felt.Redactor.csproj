@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Felt.Redactor</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Richard Ramer</Authors>
+  </PropertyGroup>
+
+</Project>
