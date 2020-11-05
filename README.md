@@ -34,7 +34,7 @@ _See example above._
 var redactor = new JsonRedactor(new IfIsRedact 
 { 
     If = "name", 
-    Is = "username", 
+    Is = "password", 
     Redact = "value" 
 });
 
