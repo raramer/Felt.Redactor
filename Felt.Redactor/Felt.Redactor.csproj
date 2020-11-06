@@ -2,9 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>Felt.Redactor</PackageId>
-    <Version>1.0.0</Version>
     <Authors>Richard Ramer</Authors>
+
+    <PackageId>Felt.Redactor</PackageId>
+    <Description>Common classes to mask sensitive information within structured text.</Description>
+    <PackageProjectUrl>https://github.com/raramer/Felt.Redactor</PackageProjectUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
