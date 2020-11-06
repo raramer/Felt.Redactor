@@ -70,9 +70,16 @@ Redactor is a set of libraries used to make it easy to mask sensitive informatio
 
 * ComplexTypeHandling : how to mask complex types.
   * RedactValue (default) - redacts the entire value.
+     ```
+    {"total":19.99,"creditCard":"[REDACTED]"}
+    ```
   * RedactDescendants - redacts each descendant value, preserving the complex type's data structure.
+    ```
+    {"total":19.99,"creditCard":{"type":"[REDACTED]","number":"[REDACTED]","expiration":"[REDACTED]","cvv":"[REDACTED]" } }
+    ``` 
 
 * OnErrorRedact : how to handle the response when the value does not conform to the structured text type.
   * All (default) - redacts the entire response.
   * None - the original value is returned.
 
+* Formatting : some redactors support options for formatting the response.
