@@ -82,12 +82,12 @@ namespace Felt.Redactor.Tests
         }
 
         [Theory]
-        [InlineData("Null", default(string))]
-        [InlineData("Empty", "")]
-        [InlineData("WhiteSpace", " ")]
-        [InlineData("Default", "[REDACTED]")]
-        [InlineData("Asterisks", "*********")]
-        public void SanitizeMaskCalled(string description, string mask)
+        [InlineData(default(string))] // null
+        [InlineData("")] // empty
+        [InlineData(" ")] // whitespace
+        [InlineData("[REDACTED]")] // default
+        [InlineData("*********")] // asterisks
+        public void SanitizeMaskCalled(string mask)
         {
             var redactor = new ExposedOptionsRedactor(new RedactorOptions { Mask = mask });
 
