@@ -7,7 +7,8 @@
     <PackageId>Felt.Redactor</PackageId>
     <Description>Common classes to mask sensitive information within structured text.</Description>
     <PackageProjectUrl>https://github.com/raramer/Felt.Redactor</PackageProjectUrl>
-    <Version>1.0.2</Version>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
 </Project>
